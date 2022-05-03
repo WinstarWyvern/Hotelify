@@ -1,28 +1,40 @@
 import React from 'react'
-import { Navbar, Nav, Button, Container, Form, FormControl } from 'react-bootstrap';
+import { Navbar, Nav, Button, Container, Form, FormControl, NavLink } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import './Navigation.css'
 const Navigation = () => {
+
   return (
     <Navbar bg="dark" variant="dark">
       <Container fluid>
         <div class="d-flex">
           <Navbar.Brand>Hotelify</Navbar.Brand>
           <Nav.Item>
-            <Nav.Link>Home</Nav.Link>
+            <NavLink>
+              <Link to="/" class="link">
+                Home
+              </Link>
+            </NavLink>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link>Hotel</Nav.Link>
+            <NavLink>
+              <Link to="/Hotel" class="link">
+                Hotel
+              </Link>
+            </NavLink>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link>Booking History</Nav.Link>
+            <NavLink>Booking History</NavLink>
           </Nav.Item>
         </div>
 
-        {/* <div class="d-lg-flex justify-content-end ">
-          <Button variant="outline-success" className="m-2">Login</Button>
-          <Button variant="outline-primary" className="m-2">Register</Button>
-        </div> */}
+        <div class="d-lg-flex justify-content-end ">
+          <Link to="/Login"><Button variant="outline-success" className="m-2">Login</Button></Link>
+          <Link to="/Register"><Button variant="outline-primary" className="m-2">Register</Button></Link>
+        </div>
 
-        <Form className="d-flex">
+
+        {/* <Form className="d-flex">
           <FormControl
             type="search"
             placeholder="Search"
@@ -30,12 +42,13 @@ const Navigation = () => {
             aria-label="Search"
           />
           <Button variant="outline-primary">Search</Button>
-        </Form>
+        </Form> */}
       </Container>
     </Navbar>
   )
 }
 
 export default Navigation
+
 
 
