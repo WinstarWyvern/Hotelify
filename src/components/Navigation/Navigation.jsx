@@ -1,7 +1,8 @@
 import React from 'react'
-import { Navbar, Nav, Button, Container, Form, FormControl, NavLink } from 'react-bootstrap';
+import { Navbar, Nav, Button, Container, Form, FormControl, NavLink} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Navigation.css'
+
 const Navigation = () => {
 
   return (
@@ -29,8 +30,8 @@ const Navigation = () => {
         </div>
 
         <div class="d-lg-flex justify-content-end ">
-          <Link to="/Login"><Button variant="outline-success" className="m-2">Login</Button></Link>
-          <Link to="/Register"><Button variant="outline-primary" className="m-2">Register</Button></Link>
+          <Link to="/Login"><Button variant="outline-primary" className="m-2" >Login</Button></Link>
+          <Link to="/Register"><Button variant="outline-danger" className="m-2">Register</Button></Link>
         </div>
 
 
