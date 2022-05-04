@@ -11,21 +11,24 @@ const Navigation = () => {
         <div class="d-flex">
           <Navbar.Brand>Hotelify</Navbar.Brand>
           <Nav.Item>
-            <NavLink>
-              <Link to="/" class="link">
+            <NavLink href="/">
                 Home
-              </Link>
+            </NavLink>
+          </Nav.Item>
+          <Nav.Item>
+            <NavLink href="/Hotel">
+                Hotel
             </NavLink>
           </Nav.Item>
           <Nav.Item>
             <NavLink>
-              <Link to="/Hotel" class="link">
-                Hotel
-              </Link>
-            </NavLink>
+              Booking History
+              </NavLink>
           </Nav.Item>
           <Nav.Item>
-            <NavLink>Booking History</NavLink>
+            <NavLink>
+              About Us
+            </NavLink>
           </Nav.Item>
         </div>
 
