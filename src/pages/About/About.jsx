@@ -1,15 +1,15 @@
 import React from 'react'
 import Navigation from '../../components/Navigation/Navigation'
 import Footer from '../../components/Footer/Footer'
-
-const Home = () => {
+import AboutUs from '../../components/AboutUs/AboutUs'
+const About = () => {
     return (
         <>
             <Navigation />
-            <div className="mb-4">Isi</div>
+            <AboutUs />
             <Footer />
         </>
     )
 }
 
-export default Home
+export default About

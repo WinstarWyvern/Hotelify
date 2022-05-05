@@ -1,7 +1,7 @@
 import React from 'react'
 import { Form, Button, Card, FormControl, Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import BgLogin from '../../assets/BackgroundLogin.jpg';
+import { BgLogin } from '../../import/importAssets'
 import './Login.css'
 const Login = () => {
   return (

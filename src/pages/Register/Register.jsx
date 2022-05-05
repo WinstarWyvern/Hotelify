@@ -1,7 +1,7 @@
 import React from 'react'
 import { Form, Button, Card, FormControl, Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import BgRegister from '../../assets/BackgroundRegister.jpg';
+import { BgRegister } from '../../import/importAssets'
 
 const Register = () => {
   return (

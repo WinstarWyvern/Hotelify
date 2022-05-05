@@ -1,40 +1,34 @@
 import React from 'react'
-import { Navbar, Nav, Button, Container, Form, FormControl, NavLink} from 'react-bootstrap';
+import { Navbar, Nav, Button, Container, Form, FormControl, NavLink } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Navigation.css'
 
 const Navigation = () => {
 
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar bg="dark" variant="dark" className="navbar navbar-expand-lg">
       <Container fluid>
         <div class="d-flex">
           <Navbar.Brand>Hotelify</Navbar.Brand>
-          <Nav.Item>
-            <NavLink href="/">
-                Home
-            </NavLink>
-          </Nav.Item>
-          <Nav.Item>
-            <NavLink href="/Hotel">
-                Hotel
-            </NavLink>
-          </Nav.Item>
-          <Nav.Item>
-            <NavLink>
-              Booking History
-              </NavLink>
-          </Nav.Item>
-          <Nav.Item>
-            <NavLink>
-              About Us
-            </NavLink>
-          </Nav.Item>
+          <div className="collapse navbar-collapse">
+            <ul className="navbar-nav">
+              <li><Nav.Item><Nav.Link href="/Home">Home</Nav.Link></Nav.Item></li>
+              <li><Nav.Item><Nav.Link href="/Hotel">Hotel</Nav.Link></Nav.Item></li>
+              <li><Nav.Item><Nav.Link href="/">Booking History</Nav.Link></Nav.Item></li>
+              <li><Nav.Item><Nav.Link href="/About">AboutUs</Nav.Link></Nav.Item></li>
+            </ul>
+          </div>
         </div>
 
-        <div class="d-lg-flex justify-content-end ">
-          <Link to="/Login"><Button variant="outline-primary" className="m-2" >Login</Button></Link>
-          <Link to="/Register"><Button variant="outline-danger" className="m-2">Register</Button></Link>
+        <div class="d-md-flex">
+          <ul className='nav navbar-nav ms-auto'>
+            <li>
+              <Link to="/Login"><Button variant="outline-primary" className="m-2" >Login</Button></Link>
+            </li>
+            <li>
+              <Link to="/Register"><Button variant="outline-danger" className="m-2">Register</Button></Link>
+            </li>
+          </ul>
         </div>
 
 
