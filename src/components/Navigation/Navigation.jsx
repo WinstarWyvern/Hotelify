@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, Button, Container, Form, FormControl } from 'react-bootstrap';
+import { Nav, Button, Form, FormControl } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Navigation.css'
 
@@ -7,7 +7,6 @@ const Navigation = () => {
 
   return (
     <nav className="navbar navbar-expand-md  bg-dark navbar-dark">
-      {/* <Container fluid> */}
       <div className="container-fluid justify-content-between">
         <ul className='nav navbar-nav'>
           <li><Nav.Item><Nav.Link href="/">Hotelify</Nav.Link></Nav.Item></li>
@@ -44,7 +43,6 @@ const Navigation = () => {
           />
           <Button variant="outline-primary">Search</Button>
         </Form> */}
-      {/* </Container> */}
     </nav>
   )
 }
