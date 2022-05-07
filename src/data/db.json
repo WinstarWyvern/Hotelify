@@ -1,0 +1,14 @@
+{
+    "hotel": [
+        {
+            "id": 1,
+            "name": "Heyo",
+            "desc": "ini hotel 1"
+        },
+        {
+            "id": 2,
+            "name": "Hola Amigo",
+            "desc": "ini hotel 2"
+        }
+    ]
+}
